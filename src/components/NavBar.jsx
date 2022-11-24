@@ -10,6 +10,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import ContactPageIcon from '@mui/icons-material/ContactPage';
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
+import Switch from '@mui/material/Switch';
 
 const theme = createTheme({
   palette: {
@@ -27,17 +28,27 @@ const theme = createTheme({
       main: 'white'
     },
     grey: {
-      main: '#5A5A5A.'
+      main: '#5A5A5A'
     }
   },
 });
 
-function ResponsiveAppBar() {
+function ResponsiveAppBar(props) {
+  const { colourful, setColourful } = props
+
+  const handleChange = (event) => {
+    setColourful(event.target.checked);
+  };
+
   return (
     <ThemeProvider theme={theme}>
       <AppBar position="fixed" color="black" >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
+            <div style={{ position: 'absolute' }}>
+              <span style={{ color: 'white' }}> COLOUR SWITCH! </span>
+              <Switch checked={colourful} onChange={handleChange} label="Colours!" style={{ color: 'white', position: 'absolute' }} />
+            </div>
             <div style={{
               margin: 'auto',
             }}>
@@ -55,14 +66,16 @@ function ResponsiveAppBar() {
                   marginRight: 3
                 }}
               >
-                <Typography style={{ color: 'white', fontWeight: '500', fontSize: '20px' }}>
-                  HOME
-                </Typography>
+                <a href="#home" style={{textDecoration: 'none'}}>
+                  <Typography style={{ color: 'white', fontWeight: '500', fontSize: '20px' }}>
+                    HOME
+                  </Typography>
+                </a>
               </Button>
               <Button
                 className="navButtons"
                 size="large"
-                startIcon = {<EmojiPeopleIcon/>}
+                startIcon={<EmojiPeopleIcon />}
                 sx={{
                   ':hover': {
                     bgcolor: 'rgb(43, 40, 40)',
@@ -73,14 +86,16 @@ function ResponsiveAppBar() {
                   marginRight: 3
                 }}
               >
-                <Typography style={{ color: 'white', fontWeight: '500', fontSize: '20px' }}>
-                  INTRODUCTION
-                </Typography>
+                <a href="#introduction" style={{textDecoration: 'none'}}>
+                  <Typography style={{ color: 'white', fontWeight: '500', fontSize: '20px' }}>
+                    INTRODUCTION
+                  </Typography>
+                </a>
               </Button>
               <Button
                 className="navButtons"
                 size="large"
-                startIcon = {<WorkHistoryIcon/>}
+                startIcon={<WorkHistoryIcon />}
                 sx={{
                   ':hover': {
                     bgcolor: 'rgb(43, 40, 40)',
@@ -91,14 +106,16 @@ function ResponsiveAppBar() {
                   marginRight: 3
                 }}
               >
-                <Typography style={{ color: 'white', fontWeight: '500', fontSize: '20px' }}>
-                  EXPERIENCE
-                </Typography>
+                <a href="#experience" style={{textDecoration: 'none'}}>
+                  <Typography style={{ color: 'white', fontWeight: '500', fontSize: '20px' }}>
+                    EXPERIENCE
+                  </Typography>
+                </a>
               </Button>
               <Button
                 className="navButtons"
                 size="large"
-                startIcon = {<ContactPageIcon/>}
+                startIcon={<ContactPageIcon />}
                 sx={{
                   ':hover': {
                     bgcolor: 'rgb(43, 40, 40)',
@@ -109,9 +126,11 @@ function ResponsiveAppBar() {
                   marginRight: 3
                 }}
               >
-                <Typography style={{ color: 'white', fontWeight: '500', fontSize: '20px' }}>
-                  CONTACT
-                </Typography>
+                <a href="#contact" style={{textDecoration: 'none'}}>
+                  <Typography style={{ color: 'white', fontWeight: '500', fontSize: '20px' }}>
+                    CONTACT
+                  </Typography>
+                </a>
               </Button>
             </div>
           </Toolbar>
@@ -120,4 +139,5 @@ function ResponsiveAppBar() {
     </ThemeProvider>
   );
 }
+
 export default ResponsiveAppBar;

@@ -47,7 +47,7 @@ const Introduction = () => {
                         fontFamily: 'Poppins',
                         textAlign: 'center'
                     }}>
-                        University of Waterloo mathematics student
+                        University of Waterloo mathematics student, class of 2026
                     </Typography>
                 </div>
             </>
@@ -117,7 +117,7 @@ const Introduction = () => {
                         fontFamily: 'Poppins',
                         textAlign: 'center'
                     }}>
-                        Played the piano for over 15 years, completed RCM Grade 10
+                        Piano for 15+ years, completed RCM Grade 10
                     </Typography>
                 </div>
             </>
@@ -126,7 +126,7 @@ const Introduction = () => {
 
     return (
         <>
-            <div style={{
+            <div id="introduction" style={{
                 minHeight: '100vh',
                 width: '100%',
                 outline: '1px solid #D3D3D3',

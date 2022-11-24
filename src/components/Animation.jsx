@@ -12,7 +12,7 @@ const Animation = () => {
     })
 
     return (
-        <div className="animation">
+        <div className="animation" id="home">
             <div className="name">
                 <span className="lineUp" style={{
                     color: 'white',
@@ -50,15 +50,6 @@ const Animation = () => {
             >
             </div>
             <div className="down-arrow"></div>
-            <Typography style={{
-                right: '1%',
-                bottom: '1%',
-                position: 'absolute',
-                zIndex: '5',
-                color: 'white'
-            }}>
-                BUILT USING REACT
-            </Typography>
         </div>
     )
 }

@@ -54,14 +54,14 @@ const Projects = () => {
                         fontFamily: 'Poppins',
                         textAlign: 'center'
                     }}>
-                        Built using firebase, HTML, CSS, JS
+                        Built using HTML, CSS, JS, Firebase
                     </Typography>
                     <div style={{
                         fontSize: '25px',
                         fontFamily: 'Poppins',
                         textAlign: 'center'
                     }}>
-                        <Link href="https://github.com/SheepStar02/ImageUploader" style={{
+                        <Link rel="noopener noreferrer" target="_blank" href="https://github.com/SheepStar02/ImageUploader" style={{
                         }}>
                             Repository
                         </Link>
@@ -127,7 +127,7 @@ const Projects = () => {
                         fontFamily: 'Poppins',
                         textAlign: 'center'
                     }}>
-                        <Link href="https://github.com/erictang398/watopoly" style={{
+                        <Link rel="noopener noreferrer" target="_blank" href="https://github.com/erictang398/watopoly" style={{
                         }}>
                             Repository
                         </Link>
@@ -168,12 +168,11 @@ const Projects = () => {
 
     return (
         <>
-            <div style={{
+            <div ref={myRef} id="experience" style={{
                 minHeight: '100vh',
                 width: '100%',
-                outline: '1px solid #D3D3D3',
                 position: 'relative',
-                borderBottom: '1px solid #D3D3D3'
+                borderBottom: `1px solid #D3D3D3`
             }}>
                 <Typography className={`${visible ? "showTwo" : "hiddenTwo"}`} variant='h1' style={{
                     fontWeight: 'bold',
@@ -186,7 +185,7 @@ const Projects = () => {
                 }}>
                     Projects
                 </Typography>
-                <div ref={myRef} className={`${visible ? "showTwo" : "hiddenTwo"}`} style={{
+                <div className={`${visible ? "showTwo" : "hiddenTwo"}`} style={{
                     position: 'relative',
                     width: '75%',
                     margin: 'auto',
