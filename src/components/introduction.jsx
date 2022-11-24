@@ -104,7 +104,7 @@ const Introduction = () => {
                         textShadow: '2px 2px black',
 
                     }}>
-                        Grade 10 Piano
+                        Piano
                     </Typography>
                     <img src={rcmpiano} style={{
                         height: '120px',
