@@ -1,13 +1,52 @@
 .animation {
     background-color: #282c34;
     width: 100%;
-    height: 100vh; 
-    position: absolute;
+    height: 100vh;
+    position: relative;
     margin: 0;
     padding: 0;
     overflow: hidden;
     cursor: none;
     top: 0;
+}
+
+.name {
+    top: 20%;
+    left: 15%;
+    position: absolute;
+}
+
+.lineUp {
+    animation: 3s anim-lineUp ease-out normal;
+}
+
+.lineUpOne {
+    animation: 4s anim-lineUp ease-out normal;
+}
+
+.lineUpTwo {
+    animation: 5s anim-lineUp ease-out normal;
+}
+
+@keyframes anim-lineUp {
+    0% {
+        opacity: 0;
+        transform: translateY(80%);
+    }
+
+    20% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }
 
 .cursor {
@@ -26,7 +65,7 @@
     list-style: none;
     opacity: 0;
     background: radial-gradient(rgb(44, 79, 175), transparent, transparent);
-    bottom : 0;
+    bottom: 0;
     left: 10vw;
     animation: animate 5s linear infinite;
 }
@@ -77,9 +116,48 @@
         opacity: 1;
         bottom: 0;
     }
+
     100% {
         transform: scale(10);
         opacity: 0;
         bottom: 70vh;
+    }
+}
+
+.down-arrow {
+    position: absolute;
+    top: calc(100vh - 150px);
+    left: calc(50% - 14px);
+    width: 0;
+    height: 30px;
+    border: 2px solid;
+    border-radius: 2px;
+    background-color: black;
+    animation: 6s anim-lineUp ease-out normal, jumpInfinite 1.5s infinite;
+}
+
+.down-arrow:after {
+    content: " ";
+    position: absolute;
+    top: 12px;
+    left: -10px;
+    width: 16px;
+    height: 16px;
+    border-bottom: 4px solid;
+    border-right: 4px solid;
+    border-radius: 4px;
+    transform: rotateZ(45deg);
+}
+
+@keyframes jumpInfinite {
+    0% {
+        margin-top: 0;
+    }
+    50% {
+        margin-top: 20px;
+    }
+
+    100% {
+        margin-top: 0;
     }
 }

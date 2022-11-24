@@ -1,0 +1,19 @@
+html {
+    scroll-snap-type: y proximity;
+}
+
+.intro {
+    min-height: 100vh;
+    background-color: #EFEFEF;
+}
+
+.project {
+    min-height: 100vh;
+    background-color: #EFEFEF;
+}
+
+section {
+    /* scroll-snap-align: start;
+    scroll-snap-stop: always; */
+    width: 100%;
+}

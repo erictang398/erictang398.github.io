@@ -1,69 +1,123 @@
 import * as React from 'react';
 import { useState } from 'react';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
+import HomeIcon from '@mui/icons-material/Home';
+import ContactPageIcon from '@mui/icons-material/ContactPage';
+import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
+import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
+
+const theme = createTheme({
+  palette: {
+    buttons: {
+      main: 'white',
+      contrastText: 'black',
+    },
+    navyBlue: {
+      main: '#00008B'
+    },
+    black: {
+      main: 'black'
+    },
+    white: {
+      main: 'white'
+    },
+    grey: {
+      main: '#5A5A5A.'
+    }
+  },
+});
 
 function ResponsiveAppBar() {
-  const [count, addCount] = useState(0)
-
   return (
-    <AppBar position="sticky">
-      <Container maxWidth="xl">
-        <Toolbar disableGutters>
-          <Typography
-            variant="h3"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: 'none', md: 'flex' },
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-              align: 'center'
-            }}
-          >
-            CIRE
-          </Typography>
-          <Typography
-            variant="h5"
-            noWrap
-            component="a"
-            href=""
-            sx={{
-              mr: 2,
-              display: { xs: 'flex', md: 'none' },
-              flexGrow: 1,
-              fontFamily: 'monospace',
-              fontWeight: 700,
-              letterSpacing: '.3rem',
-              color: 'inherit',
-              textDecoration: 'none',
-            }}
-          >
-            CIRE
-          </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+    <ThemeProvider theme={theme}>
+      <AppBar position="fixed" color="black" >
+        <Container maxWidth="xl">
+          <Toolbar disableGutters>
+            <div style={{
+              margin: 'auto',
+            }}>
               <Button
-                sx={{ my: 2, color: 'white', display: 'block', align: 'right'}}
-                onClick={() => addCount(count + 1)}
+                className="navButtons"
+                size="large"
+                startIcon={<HomeIcon />}
+                sx={{
+                  ':hover': {
+                    bgcolor: 'rgb(43, 40, 40)',
+                    transitionDuration: '0.2s'
+                  },
+                  borderRadius: 4,
+                  marginLeft: 3,
+                  marginRight: 3
+                }}
               >
-                CLICK ME!
+                <Typography style={{ color: 'white', fontWeight: '500', fontSize: '20px' }}>
+                  HOME
+                </Typography>
               </Button>
-          </Box>
-          <Typography align="right" style={{top: '50%'}}>
-                {count} clicks!
-          </Typography>
-        </Toolbar>
-      </Container>
-    </AppBar>
+              <Button
+                className="navButtons"
+                size="large"
+                startIcon = {<EmojiPeopleIcon/>}
+                sx={{
+                  ':hover': {
+                    bgcolor: 'rgb(43, 40, 40)',
+                    transitionDuration: '0.2s'
+                  },
+                  borderRadius: 4,
+                  marginLeft: 3,
+                  marginRight: 3
+                }}
+              >
+                <Typography style={{ color: 'white', fontWeight: '500', fontSize: '20px' }}>
+                  INTRODUCTION
+                </Typography>
+              </Button>
+              <Button
+                className="navButtons"
+                size="large"
+                startIcon = {<WorkHistoryIcon/>}
+                sx={{
+                  ':hover': {
+                    bgcolor: 'rgb(43, 40, 40)',
+                    transitionDuration: '0.2s'
+                  },
+                  borderRadius: 4,
+                  marginLeft: 3,
+                  marginRight: 3
+                }}
+              >
+                <Typography style={{ color: 'white', fontWeight: '500', fontSize: '20px' }}>
+                  EXPERIENCE
+                </Typography>
+              </Button>
+              <Button
+                className="navButtons"
+                size="large"
+                startIcon = {<ContactPageIcon/>}
+                sx={{
+                  ':hover': {
+                    bgcolor: 'rgb(43, 40, 40)',
+                    transitionDuration: '0.2s'
+                  },
+                  borderRadius: 4,
+                  marginLeft: 3,
+                  marginRight: 3
+                }}
+              >
+                <Typography style={{ color: 'white', fontWeight: '500', fontSize: '20px' }}>
+                  CONTACT
+                </Typography>
+              </Button>
+            </div>
+          </Toolbar>
+        </Container>
+      </AppBar>
+    </ThemeProvider>
   );
 }
 export default ResponsiveAppBar;
