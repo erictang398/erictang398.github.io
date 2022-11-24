@@ -47,7 +47,7 @@ const Introduction = () => {
                         fontFamily: 'Poppins',
                         textAlign: 'center'
                     }}>
-                        University of Waterloo mathematics student, class of 2026
+                        University of Waterloo mathematics student with co-op, class of 2026
                     </Typography>
                 </div>
             </>
