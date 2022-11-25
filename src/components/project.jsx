@@ -174,7 +174,7 @@ const Projects = () => {
                 position: 'relative',
                 borderBottom: `1px solid #D3D3D3`
             }}>
-                <Typography className={`${visible ? "showTwo" : "hiddenTwo"}`} variant='h1' style={{
+                <Typography className={`${visible ? "showTwo" : "hiddenTwo"}`} variant='h2' style={{
                     fontWeight: 'bold',
                     fontFamily: 'Abril Fatface',
                     marginBottom: '60px',

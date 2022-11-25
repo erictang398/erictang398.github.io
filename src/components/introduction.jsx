@@ -133,7 +133,7 @@ const Introduction = () => {
                 position: 'relative',
                 borderBottom: '1px solid #D3D3D3'
             }}>
-                <Typography className={`${visible ? "show" : "hidden"}`} variant='h1' style={{
+                <Typography className={`${visible ? "show" : "hidden"}`} variant='h2' style={{
                     fontWeight: 'bold',
                     fontFamily: 'Abril Fatface',
                     marginBottom: '60px',

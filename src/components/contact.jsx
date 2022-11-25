@@ -15,7 +15,7 @@ const Contact = () => {
                 borderBottom: `1px solid #D3D3D3`,
                 overflow: 'hidden'
             }}>
-                <Typography variant='h1' style={{
+                <Typography variant='h2' style={{
                     fontWeight: 'bold',
                     fontFamily: 'Abril Fatface',
                     marginBottom: '60px',
