@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
+import { isMobile } from 'react-device-detect'
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
@@ -12,21 +13,21 @@ const Projects = () => {
     const myRef = useRef()
     const [visible, setVisible] = useState()
 
-    const [isMobile, setIsMobile] = useState(false)
+    // const [isMobile, setIsMobile] = useState(false)
  
-    //choose the screen size 
-    const handleResize = () => {
-        if (window.innerWidth < 760) {
-            setIsMobile(true)
-        } else {
-            setIsMobile(false)
-        }
-    }
+    // //choose the screen size 
+    // const handleResize = () => {
+    //     if (window.innerWidth < 760) {
+    //         setIsMobile(true)
+    //     } else {
+    //         setIsMobile(false)
+    //     }
+    // }
 
-    // create an event listener
-    useEffect(() => {
-        window.addEventListener("resize", handleResize)
-    })
+    // // create an event listener
+    // useEffect(() => {
+    //     window.addEventListener("resize", handleResize)
+    // })
 
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
@@ -276,7 +277,8 @@ const Projects = () => {
                             backgroundColor: 'white',
                             marginRight: '20px',
                             border: '2px solid #D3D3D3',
-                            minWidth: isMobile ? '70%' : ''
+                            minWidth: isMobile ? '70%' : '',
+                            marginBottom: isMobile ? '3vh' : ''
                         }}>
                             {imup()}
                         </Grid>
@@ -292,7 +294,8 @@ const Projects = () => {
                             backgroundColor: 'white',
                             marginRight: '20px',
                             border: '2px solid #D3D3D3',
-                            minWidth: isMobile ? '70%' : ''
+                            minWidth: isMobile ? '70%' : '',
+                            marginBottom: isMobile ? '3vh' : ''
                         }}>
                             {languageRecognition()}
                         </Grid>

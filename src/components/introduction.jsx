@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react';
+import { isMobile } from 'react-device-detect'
 import './introduction.css'
 import { Typography } from '@mui/material';
 import waterloo from '../waterloo.png';
@@ -10,21 +11,21 @@ import Grid from '@mui/material/Unstable_Grid2';
 const Introduction = () => {
     const myRef = useRef()
     const [visible, setVisible] = useState()
-    const [isMobile, setIsMobile] = useState(false)
+    // const [isMobile, setIsMobile] = useState(false)
  
-    //choose the screen size 
-    const handleResize = () => {
-        if (window.innerWidth < 760) {
-            setIsMobile(true)
-        } else {
-            setIsMobile(false)
-        }
-    }
+    // //choose the screen size 
+    // const handleResize = () => {
+    //     if (window.innerWidth < 760) {
+    //         setIsMobile(true)
+    //     } else {
+    //         setIsMobile(false)
+    //     }
+    // }
 
-    // create an event listener
-    useEffect(() => {
-        window.addEventListener("resize", handleResize)
-    })
+    // // create an event listener
+    // useEffect(() => {
+    //     window.addEventListener("resize", handleResize)
+    // })
     
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
@@ -178,14 +179,16 @@ const Introduction = () => {
                             backgroundColor: 'white',
                             marginRight: '20px',
                             border: '2px solid #D3D3D3',
-                            minWidth: isMobile ? '70%' : ''
+                            minWidth: isMobile ? '70%' : '',
+                            marginBottom: isMobile ? '3vh' : ''
                         }}>
                             {schoolCard()}
                         </Grid>
                         <Grid xs style={{
                             backgroundColor: 'white',
                             border: '2px solid #D3D3D3',
-                            minWidth: isMobile ? '70%' : ''
+                            minWidth: isMobile ? '70%' : '',
+                            marginBottom: isMobile ? '3vh' : ''
                         }}>
                             {uhnCard()}
                         </Grid>
@@ -193,7 +196,8 @@ const Introduction = () => {
                             backgroundColor: 'white',
                             marginLeft: '20px',
                             border: '2px solid #D3D3D3',
-                            minWidth: isMobile ? '70%' : ''
+                            minWidth: isMobile ? '70%' : '',
+                            marginBottom: isMobile ? '3vh' : ''
                         }}>
                             {musicCard()}
                         </Grid>
