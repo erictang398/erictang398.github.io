@@ -41,8 +41,8 @@ const Contact = () => {
                     position: 'relative', 
                     color: 'black'
                 }}>
-                    Github: <Link rel="noopener noreferrer" target="_blank" href="https://github.com/erictang398" style={{
-                    fontSize: '25px'}}> Click </Link>
+                    <Link rel="noopener noreferrer" target="_blank" href="https://github.com/erictang398" style={{
+                    fontSize: '25px'}}> Github </Link>
                 </Typography>
                 <br />
                 <Typography style={{
@@ -51,8 +51,8 @@ const Contact = () => {
                     position: 'relative', 
                     color: 'black'
                 }}>
-                    LinkedIn: <Link rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/eric-tang-88746223a/" style={{
-                    fontSize: '25px'}}> Click </Link>
+                    <Link rel="noopener noreferrer" target="_blank" href="https://www.linkedin.com/in/eric-tang-88746223a/" style={{
+                    fontSize: '25px'}}> LinkedIn </Link>
                 </Typography>
             </div>
         </>

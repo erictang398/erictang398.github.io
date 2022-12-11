@@ -25,22 +25,26 @@ const Introduction = () => {
                 <div style={{
                     position: 'relative',
                     justifyContent: 'center',
+                    maxWidth: '100%'
                 }}>
                     <Typography variant="h2" style={{
                         fontWeight: 'bold',
                         fontFamily: 'Poppins',
                         textAlign: 'center',
                         color: 'grey',
-                        textShadow: '2px 2px black'
+                        textShadow: '2px 2px black',
+                        maxWidth: '100%',
+                        overflowWrap: 'anywhere'
                     }}>
                         Education
                     </Typography>
                     <img src={waterloo} style={{
                         borderRadius: '50px',
-                        height: '100px',
-                        width: '100px',
+                        height: '40%',
+                        width: '40%',
                         position: 'relative',
-                        left: `calc(50% - 50px)`,
+                        left: `30%`,
+                        marginTop: '2%',
                     }} />
                     <Typography style={{
                         fontSize: '25px',
@@ -66,16 +70,18 @@ const Introduction = () => {
                         fontFamily: 'Poppins',
                         textAlign: 'center',
                         color: 'grey',
-                        textShadow: '2px 2px black'
+                        textShadow: '2px 2px black',
+                        overflowWrap: 'anywhere'
                     }}>
                         UHN Data Intern
                     </Typography>
                     <img src={uhndata} style={{
                         position: 'relative',
                         scale: '0.7',
-                        height: '90px',
-                        width: '270px',
-                        left: `calc(50% - 135px)`,
+                        height: '50%',
+                        width: '80%',
+                        left: `10%`,
+                        marginTop: '2%',
                     }} />
                     <Typography style={{
                         fontSize: '25px',
@@ -102,22 +108,23 @@ const Introduction = () => {
                         textAlign: 'center',
                         color: 'grey',
                         textShadow: '2px 2px black',
-
+                        overflowWrap: 'anywhere'
                     }}>
                         Piano
                     </Typography>
                     <img src={rcmpiano} style={{
-                        height: '120px',
-                        width: '130px',
-                        left: `calc(50% - 65px)`,
-                        position: 'relative'
+                        height: '50%',
+                        width: '50%',
+                        left: `25%`,
+                        position: 'relative',
+                        marginTop: '2%',
                     }} />
                     <Typography style={{
                         fontSize: '25px',
                         fontFamily: 'Poppins',
                         textAlign: 'center'
                     }}>
-                        Piano for 15+ years, completed RCM Grade 10
+                        Piano for 15+ years, completed RCM Grade 10. 6+ years of concert band
                     </Typography>
                 </div>
             </>

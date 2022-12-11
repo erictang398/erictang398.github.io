@@ -5,6 +5,7 @@ import Grid from '@mui/material/Unstable_Grid2';
 import Link from '@mui/material/Link';
 import Monopoly from '../monopoly.jpg'
 import imuppic from '../imup.PNG'
+import Language from '../language.jpg'
 import './introduction.css'
 
 const Projects = () => {
@@ -32,15 +33,16 @@ const Projects = () => {
                         textAlign: 'center',
                         color: 'grey',
                         textShadow: '2px 2px black',
-
+                        overflowWrap: 'anywhere'
                     }}>
                         IMUP
                     </Typography>
                     <img src={imuppic} style={{
-                        height: '120px',
-                        width: '130px',
-                        left: `calc(50% - 65px)`,
-                        position: 'relative'
+                        height: '40%',
+                        width: '40%',
+                        left: `30%`,
+                        position: 'relative',
+                        marginTop: '2%',
                     }} />
                     <Typography style={{
                         fontSize: '25px',
@@ -71,6 +73,66 @@ const Projects = () => {
         )
     }
 
+    const languageRecognition = () => {
+        return (
+            <>
+                <div style={{
+                    position: 'relative',
+                    justifyContent: 'center',
+                }}>
+                    <Typography variant="h2" style={{
+                        fontWeight: 'bold',
+                        fontFamily: 'Poppins',
+                        textAlign: 'center',
+                        color: 'grey',
+                        textShadow: '2px 2px black',
+                        overflowWrap: 'anywhere'
+                    }}>
+                        Language Recognition
+                    </Typography>
+                    <img src={Language} style={{
+                        height: '40%',
+                        width: '40%',
+                        left: `30%`,
+                        marginTop: '2%',
+                        position: 'relative'
+                    }} />
+                    <Typography style={{
+                        fontSize: '25px',
+                        fontFamily: 'Poppins',
+                        textAlign: 'center'
+                    }}>
+                        Language Recognition Model
+                    </Typography>
+                    <Typography style={{
+                        fontSize: '25px',
+                        fontFamily: 'Poppins',
+                        textAlign: 'center'
+                    }}>
+                        Starter ML project using the Multinomial Naive Bayes algorithm
+                    </Typography>
+                    <Typography style={{
+                        fontSize: '25px',
+                        fontFamily: 'Poppins',
+                        textAlign: 'center'
+                    }}>
+                        96.4% accuracy recognizing
+                    </Typography>
+                    <div style={{
+                        fontSize: '25px',
+                        fontFamily: 'Poppins',
+                        textAlign: 'center'
+                    }}>
+                        <Link rel="noopener noreferrer" target="_blank" href="https://github.com/erictang398/language-recognition" style={{
+                        }}>
+                            Repository
+                        </Link>
+                    </div>
+                </div>
+            </>
+        )
+    }
+
     const watopoly = () => {
         return (
             <>
@@ -84,15 +146,16 @@ const Projects = () => {
                         textAlign: 'center',
                         color: 'grey',
                         textShadow: '2px 2px black',
-
+                        overflowWrap: 'anywhere'
                     }}>
                         Watopoly
                     </Typography>
                     <img src={Monopoly}style={{
-                        height: '120px',
-                        width: '130px',
-                        left: `calc(50% - 65px)`,
-                        position: 'relative'
+                        height: '40%',
+                        width: '40%',
+                        left: `30%`,
+                        position: 'relative',
+                        marginTop: '2%',
                     }} />
                     <Typography style={{
                         fontSize: '25px',
@@ -150,7 +213,7 @@ const Projects = () => {
                         textAlign: 'center',
                         color: 'grey',
                         textShadow: '2px 2px black',
-
+                        overflowWrap: 'anywhere'
                     }}>
                         More to come...
                     </Typography>
@@ -159,7 +222,7 @@ const Projects = () => {
                         fontFamily: 'Poppins',
                         textAlign: 'center'
                     }}>
-                        Machine Learning Project Planned
+                        More advanced machine learning project planned
                     </Typography>
                 </div>
             </>
@@ -210,6 +273,12 @@ const Projects = () => {
                         <Grid xs style={{
                             backgroundColor: 'white',
                             marginRight: '20px',
+                            border: '2px solid #D3D3D3',
+                        }}>
+                            {languageRecognition()}
+                        </Grid>
+                        <Grid xs style={{
+                            backgroundColor: 'white',
                             border: '2px solid #D3D3D3',
                         }}>
                             {moreToCome()}

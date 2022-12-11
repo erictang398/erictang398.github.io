@@ -11,6 +11,7 @@ import ContactPageIcon from '@mui/icons-material/ContactPage';
 import EmojiPeopleIcon from '@mui/icons-material/EmojiPeople';
 import WorkHistoryIcon from '@mui/icons-material/WorkHistory';
 import Switch from '@mui/material/Switch';
+import FormControlLabel from '@mui/material/FormControlLabel';
 
 const theme = createTheme({
   palette: {
@@ -45,10 +46,6 @@ function ResponsiveAppBar(props) {
       <AppBar position="fixed" color="black" >
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <div style={{ position: 'absolute' }}>
-              <span style={{ color: 'white' }}> COLOUR SWITCH! </span>
-              <Switch checked={colourful} onChange={handleChange} label="Colours!" style={{ color: 'white', position: 'absolute' }} />
-            </div>
             <div style={{
               margin: 'auto',
             }}>
@@ -132,6 +129,9 @@ function ResponsiveAppBar(props) {
                   </Typography>
                 </a>
               </Button>
+              <FormControlLabel control={<Switch checked={colourful} onChange={handleChange} name="Colours!"/>}
+              label="Colours!"
+              style={{color: "white"}}/>
             </div>
           </Toolbar>
         </Container>
