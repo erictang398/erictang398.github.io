@@ -12,6 +12,22 @@ const Projects = () => {
     const myRef = useRef()
     const [visible, setVisible] = useState()
 
+    const [isMobile, setIsMobile] = useState(false)
+ 
+    //choose the screen size 
+    const handleResize = () => {
+        if (window.innerWidth < 760) {
+            setIsMobile(true)
+        } else {
+            setIsMobile(false)
+        }
+    }
+
+    // create an event listener
+    useEffect(() => {
+        window.addEventListener("resize", handleResize)
+    })
+
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             const entry = entries[0]
@@ -222,7 +238,7 @@ const Projects = () => {
                         fontFamily: 'Poppins',
                         textAlign: 'center'
                     }}>
-                        More advanced machine learning project planned
+                        Sentiment analysis machine learning project planned
                     </Typography>
                 </div>
             </>
@@ -260,12 +276,14 @@ const Projects = () => {
                             backgroundColor: 'white',
                             marginRight: '20px',
                             border: '2px solid #D3D3D3',
+                            minWidth: isMobile ? '70%' : ''
                         }}>
                             {imup()}
                         </Grid>
                         <Grid xs style={{
                             backgroundColor: 'white',
                             border: '2px solid #D3D3D3',
+                            minWidth: isMobile ? '70%' : ''
                         }}>
                             {watopoly()}
                         </Grid>
@@ -274,12 +292,14 @@ const Projects = () => {
                             backgroundColor: 'white',
                             marginRight: '20px',
                             border: '2px solid #D3D3D3',
+                            minWidth: isMobile ? '70%' : ''
                         }}>
                             {languageRecognition()}
                         </Grid>
                         <Grid xs style={{
                             backgroundColor: 'white',
                             border: '2px solid #D3D3D3',
+                            minWidth: isMobile ? '70%' : ''
                         }}>
                             {moreToCome()}
                         </Grid>
