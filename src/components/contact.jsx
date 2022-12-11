@@ -31,7 +31,10 @@ const Contact = () => {
                     fontSize: '25px', 
                     marginTop: '50px', 
                     left: '15%', 
-                    position: 'relative'}}>
+                    position: 'relative',
+                    overflowWrap: 'anywhere',
+                    marginRight: '15%'
+                }}>
                     Email: tangeric398@gmail.com
                 </Typography>
                 <br />
