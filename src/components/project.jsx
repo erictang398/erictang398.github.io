@@ -133,7 +133,7 @@ const Projects = () => {
                         fontFamily: 'Poppins',
                         textAlign: 'center'
                     }}>
-                        96.4% accuracy recognizing
+                        ~96.4% accuracy
                     </Typography>
                     <div style={{
                         fontSize: '25px',
