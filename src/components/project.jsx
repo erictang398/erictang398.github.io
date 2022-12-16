@@ -44,13 +44,13 @@ const Projects = () => {
                     position: 'relative',
                     justifyContent: 'center',
                 }}>
-                    <Typography variant="h2" style={{
+                    <Typography style={{
+                        fontSize: '3em',
                         fontWeight: 'bold',
                         fontFamily: 'Poppins',
                         textAlign: 'center',
                         color: 'grey',
                         textShadow: '2px 2px black',
-                        overflowWrap: 'anywhere'
                     }}>
                         IMUP
                     </Typography>
@@ -97,13 +97,13 @@ const Projects = () => {
                     position: 'relative',
                     justifyContent: 'center',
                 }}>
-                    <Typography variant="h2" style={{
+                    <Typography style={{
+                        fontSize: '3em',
                         fontWeight: 'bold',
                         fontFamily: 'Poppins',
                         textAlign: 'center',
                         color: 'grey',
                         textShadow: '2px 2px black',
-                        overflowWrap: 'anywhere'
                     }}>
                         Language Recognition
                     </Typography>
@@ -157,13 +157,13 @@ const Projects = () => {
                     position: 'relative',
                     justifyContent: 'center',
                 }}>
-                    <Typography variant="h2" style={{
+                    <Typography style={{
+                        fontSize: '3em',
                         fontWeight: 'bold',
                         fontFamily: 'Poppins',
                         textAlign: 'center',
                         color: 'grey',
                         textShadow: '2px 2px black',
-                        overflowWrap: 'anywhere'
                     }}>
                         Watopoly
                     </Typography>
@@ -224,13 +224,13 @@ const Projects = () => {
                     position: 'relative',
                     justifyContent: 'center',
                 }}>
-                    <Typography variant="h2" style={{
+                    <Typography style={{
+                        fontSize: '3em',
                         fontWeight: 'bold',
                         fontFamily: 'Poppins',
                         textAlign: 'center',
                         color: 'grey',
                         textShadow: '2px 2px black',
-                        overflowWrap: 'anywhere'
                     }}>
                         More to come...
                     </Typography>

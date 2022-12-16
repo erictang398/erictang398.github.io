@@ -41,16 +41,14 @@ const Introduction = () => {
                 <div style={{
                     position: 'relative',
                     justifyContent: 'center',
-                    maxWidth: '100%'
                 }}>
-                    <Typography variant="h2" style={{
+                    <Typography style={{
+                        fontSize: '3em',
                         fontWeight: 'bold',
                         fontFamily: 'Poppins',
                         textAlign: 'center',
                         color: 'grey',
                         textShadow: '2px 2px black',
-                        maxWidth: '100%',
-                        overflowWrap: 'anywhere'
                     }}>
                         Education
                     </Typography>
@@ -81,13 +79,13 @@ const Introduction = () => {
                     position: 'relative',
                     justifyContent: 'center',
                 }}>
-                    <Typography variant="h2" style={{
+                    <Typography style={{
+                        fontSize: '3em',
                         fontWeight: 'bold',
                         fontFamily: 'Poppins',
                         textAlign: 'center',
                         color: 'grey',
                         textShadow: '2px 2px black',
-                        overflowWrap: 'anywhere'
                     }}>
                         UHN Data Intern
                     </Typography>
@@ -118,13 +116,13 @@ const Introduction = () => {
                     position: 'relative',
                     justifyContent: 'center',
                 }}>
-                    <Typography variant="h2" style={{
+                    <Typography style={{
+                        fontSize: '3em',
                         fontWeight: 'bold',
                         fontFamily: 'Poppins',
                         textAlign: 'center',
                         color: 'grey',
                         textShadow: '2px 2px black',
-                        overflowWrap: 'anywhere'
                     }}>
                         Piano
                     </Typography>
