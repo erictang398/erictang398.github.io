@@ -152,7 +152,7 @@ const Introduction = () => {
                 width: '100%',
                 outline: '1px solid #D3D3D3',
                 position: 'relative',
-                borderBottom: '1px solid #D3D3D3'
+                borderBottom: '1px solid #D3D3D3',
             }}>
                 <Typography className={`${visible ? "show" : "hidden"}`} variant='h2' style={{
                     fontWeight: 'bold',
