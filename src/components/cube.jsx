@@ -1,8 +1,7 @@
 import React, { useEffect, useRef } from 'react';
-import { isMobile } from 'react-device-detect';
 import * as THREE from 'three';
 
-function AnimatedComponent() {
+function Cube() {
   const containerRef = useRef(null);
 
   useEffect(() => {
@@ -60,5 +59,5 @@ function AnimatedComponent() {
   return <div ref={containerRef} style={{ position: 'relative', left: '-30%', width: '50%', height: '50%'}}/>;
 }
 
-export default AnimatedComponent;
+export default Cube;
 

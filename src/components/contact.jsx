@@ -5,7 +5,7 @@ import Link from '@mui/material/Link';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
-import AnimatedComponent from './animatedComponent';
+import Cube from './cube';
 
 const Contact = () => {
     return (
@@ -65,7 +65,7 @@ const Contact = () => {
                         </Typography>
                     </div>
                     {/* <div style={{ width: '50%', height: '100%' }}> */}
-                        <AnimatedComponent style={{ right: '50%' }}/>
+                        <Cube style={{ right: '50%' }}/>
                     {/* </div> */}
 
                 </div>
