@@ -22,13 +22,24 @@ const Contact = () => {
                         <Typography variant='h2' style={{
                             fontWeight: 'bold',
                             fontFamily: 'Abril Fatface',
+                            marginBottom: '20px',
+                            left: '15%',
+                            top: '15vh',
+                            position: 'relative',
+                            maxWidth: '50%',
+                        }}>
+                            Contact me
+                        </Typography>
+                        <Typography style={{
+                            fontWeight: 'bold',
+                            fontFamily: 'Abril Fatface',
                             marginBottom: '60px',
                             left: '15%',
                             top: '15vh',
                             position: 'relative',
                             maxWidth: '50%',
                         }}>
-                            Contact me <EmailIcon fontSize='large' /> <GitHubIcon fontSize='large' /> <LinkedInIcon fontSize='large' />
+                        <EmailIcon fontSize='large' /> <GitHubIcon fontSize='large' /> <LinkedInIcon fontSize='large' />
                         </Typography>
                         <br />
                         <Typography color="black" style={{
