@@ -118,7 +118,7 @@ function ResponsiveAppBar(props) {
 
   return (
     <Box sx={{ display: 'flex' }}>
-      <AppBar component="nav" sx={{backgroundColor: 'black'}}>
+      <AppBar component="nav" sx={{backgroundColor: 'black'}} style={{width: '100%'}}> 
         <Toolbar>
           <IconButton
             color="inherit"
