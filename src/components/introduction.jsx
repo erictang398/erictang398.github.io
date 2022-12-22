@@ -124,7 +124,7 @@ const Introduction = () => {
                         color: 'grey',
                         textShadow: '2px 2px black',
                     }}>
-                        Piano
+                        Music
                     </Typography>
                     <img src={rcmpiano} style={{
                         height: '50%',

@@ -7,6 +7,7 @@ import Link from '@mui/material/Link';
 import Monopoly from '../monopoly.jpg'
 import imuppic from '../imup.PNG'
 import Language from '../language.jpg'
+import Sentiment from '../sentiment.jpg'
 import './introduction.css'
 
 const Projects = () => {
@@ -141,6 +142,66 @@ const Projects = () => {
                         textAlign: 'center'
                     }}>
                         <Link rel="noopener noreferrer" target="_blank" href="https://github.com/erictang398/language-recognition" style={{
+                        }}>
+                            Repository
+                        </Link>
+                    </div>
+                </div>
+            </>
+        )
+    }
+
+    const sentimentAnalysis = () => {
+        return (
+            <>
+                <div style={{
+                    position: 'relative',
+                    justifyContent: 'center',
+                }}>
+                    <Typography style={{
+                        fontSize: '3em',
+                        fontWeight: 'bold',
+                        fontFamily: 'Poppins',
+                        textAlign: 'center',
+                        color: 'grey',
+                        textShadow: '2px 2px black',
+                    }}>
+                        Sentiment Analysis
+                    </Typography>
+                    <img src={Sentiment} style={{
+                        height: '40%',
+                        width: '40%',
+                        left: `30%`,
+                        marginTop: '2%',
+                        position: 'relative'
+                    }} />
+                    <Typography style={{
+                        fontSize: '25px',
+                        fontFamily: 'Poppins',
+                        textAlign: 'center'
+                    }}>
+                        Natural Language Processing Model
+                    </Typography>
+                    <Typography style={{
+                        fontSize: '25px',
+                        fontFamily: 'Poppins',
+                        textAlign: 'center'
+                    }}>
+                        Multinomial Naive Bayes algorithm
+                    </Typography>
+                    <Typography style={{
+                        fontSize: '25px',
+                        fontFamily: 'Poppins',
+                        textAlign: 'center'
+                    }}>
+                        ~87.7% accuracy
+                    </Typography>
+                    <div style={{
+                        fontSize: '25px',
+                        fontFamily: 'Poppins',
+                        textAlign: 'center'
+                    }}>
+                        <Link rel="noopener noreferrer" target="_blank" href="https://github.com/erictang398/sentiment-analysis" style={{
                         }}>
                             Repository
                         </Link>
@@ -304,7 +365,7 @@ const Projects = () => {
                             border: '2px solid #D3D3D3',
                             minWidth: isMobile ? '70%' : ''
                         }}>
-                            {moreToCome()}
+                            {sentimentAnalysis()}
                         </Grid>
                     </Grid>
                 </div>
