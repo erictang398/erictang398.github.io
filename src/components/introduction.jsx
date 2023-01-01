@@ -145,6 +145,35 @@ const Introduction = () => {
         )
     }
 
+    const doordashStartup = () => {
+        return (
+            <>
+                <div style={{
+                    position: 'relative',
+                    justifyContent: 'center',
+                }}>
+                    <Typography style={{
+                        fontSize: '3em',
+                        fontWeight: 'bold',
+                        fontFamily: 'Poppins',
+                        textAlign: 'center',
+                        color: 'grey',
+                        textShadow: '2px 2px black',
+                    }}>
+                        Doordash Startup Project
+                    </Typography>
+                    <Typography style={{
+                        fontSize: '25px',
+                        fontFamily: 'Poppins',
+                        textAlign: 'center'
+                    }}>
+                        Fullstack developer of a Doordash startup project
+                    </Typography>
+                </div>
+            </>
+        )
+    }
+
     return (
         <>
             <div id="introduction" style={{
@@ -199,7 +228,16 @@ const Introduction = () => {
                         }}>
                             {musicCard()}
                         </Grid>
-                        <Box width="100%" />
+                        <Box width="100%" style={{marginBottom: '3vh'}}/>
+                        <Grid xs={4} item style={{
+                            backgroundColor: 'white',
+                            border: '2px solid #D3D3D3',
+                            minWidth: isMobile ? '70%' : '',
+                            marginBottom: isMobile ? '3vh' : '',
+                            margin: 'auto'
+                        }}>
+                            {doordashStartup()}
+                        </Grid>
                     </Grid>
                 </div>
             </div>

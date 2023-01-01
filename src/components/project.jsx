@@ -8,6 +8,7 @@ import Monopoly from '../monopoly.jpg'
 import imuppic from '../imup.PNG'
 import Language from '../language.jpg'
 import Sentiment from '../sentiment.jpg'
+import Doordash from '../doordash.jpg'
 import './introduction.css'
 
 const Projects = () => {
@@ -278,6 +279,62 @@ const Projects = () => {
         )
     }
 
+    const doordashStartup = () => {
+        return (
+            <>
+                <div style={{
+                    position: 'relative',
+                    justifyContent: 'center',
+                }}>
+                    <Typography style={{
+                        fontSize: '3em',
+                        fontWeight: 'bold',
+                        fontFamily: 'Poppins',
+                        textAlign: 'center',
+                        color: 'grey',
+                        textShadow: '2px 2px black',
+                    }}>
+                        Doordash API Project
+                    </Typography>
+                    <img src={Doordash}style={{
+                        height: '40%',
+                        width: '40%',
+                        left: `30%`,
+                        position: 'relative',
+                        marginTop: '2%',
+                    }} />
+                    <Typography style={{
+                        fontSize: '25px',
+                        fontFamily: 'Poppins',
+                        textAlign: 'center'
+                    }}>
+                    </Typography>
+                    <Typography style={{
+                        fontSize: '25px',
+                        fontFamily: 'Poppins',
+                        textAlign: 'center'
+                    }}>
+                        Created using NextJS, NextAuth, and PostgresQL 
+                    </Typography>
+                    <Typography style={{
+                        fontSize: '25px',
+                        fontFamily: 'Poppins',
+                        textAlign: 'center'
+                    }}>
+                        Utilizing the Doordash API
+                    </Typography>
+                    <Typography style={{
+                        fontSize: '25px',
+                        fontFamily: 'Poppins',
+                        textAlign: 'center'
+                    }}>
+                        Allows small businesses to request rider pickup and delivery service
+                    </Typography>
+                </div>
+            </>
+        )
+    }
+
     const moreToCome = () => {
         return (
             <>
@@ -300,7 +357,7 @@ const Projects = () => {
                         fontFamily: 'Poppins',
                         textAlign: 'center'
                     }}>
-                        Sentiment analysis machine learning project planned
+                        Unity game project planned
                     </Typography>
                 </div>
             </>
@@ -350,7 +407,9 @@ const Projects = () => {
                         }}>
                             {watopoly()}
                         </Grid>
+
                         <Box width="100%" style={{marginBottom: '3vh'}}/>
+
                         <Grid xs style={{
                             backgroundColor: 'white',
                             marginRight: '20px',
@@ -366,6 +425,27 @@ const Projects = () => {
                             minWidth: isMobile ? '70%' : ''
                         }}>
                             {sentimentAnalysis()}
+                        </Grid>
+
+                        <Box width="100%" style={{marginBottom: '3vh'}}/>
+                        
+                        <Grid xs style={{
+                            backgroundColor: 'white',
+                            marginRight: '20px',
+                            border: '2px solid #D3D3D3',
+                            minWidth: isMobile ? '70%' : '',
+                            marginBottom: isMobile ? '3vh' : ''
+                        }}>
+                            {doordashStartup()}
+                        </Grid>
+
+                        <Grid xs style={{
+                            backgroundColor: 'white',
+                            border: '2px solid #D3D3D3',
+                            minWidth: isMobile ? '70%' : '',
+                            marginBottom: isMobile ? '3vh' : ''
+                        }}>
+                            {moreToCome()}
                         </Grid>
                     </Grid>
                 </div>
