@@ -1,16 +1,17 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.5a224249.css",
-    "main.js": "/react-portfolio/static/js/main.92ad5750.js",
+    "main.js": "/react-portfolio/static/js/main.c5f1dd47.js",
+    "static/media/doordash.jpg": "/react-portfolio/static/media/doordash.3099c86ef306792e433e.jpg",
     "static/media/imup.PNG": "/react-portfolio/static/media/imup.4771a7467a7b5c12ac88.PNG",
     "static/media/language.jpg": "/react-portfolio/static/media/language.de47aecfb4bbdc1a5e85.jpg",
     "static/media/waterloo.png": "/react-portfolio/static/media/waterloo.f67acc0b85dfedd047da.png",
     "index.html": "/react-portfolio/index.html",
     "main.5a224249.css.map": "/react-portfolio/static/css/main.5a224249.css.map",
-    "main.92ad5750.js.map": "/react-portfolio/static/js/main.92ad5750.js.map"
+    "main.c5f1dd47.js.map": "/react-portfolio/static/js/main.c5f1dd47.js.map"
   },
   "entrypoints": [
     "static/css/main.5a224249.css",
-    "static/js/main.92ad5750.js"
+    "static/js/main.c5f1dd47.js"
   ]
 }
