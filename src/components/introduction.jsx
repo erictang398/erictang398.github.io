@@ -2,9 +2,9 @@ import React, { useRef, useEffect, useState } from 'react';
 import { isMobile } from 'react-device-detect'
 import './introduction.css'
 import { Typography } from '@mui/material';
-import waterloo from '../waterloo.png';
-import uhndata from '../uhndata.png';
-import rcmpiano from '../rcmpiano.jpg';
+import waterloo from '../images/waterloo.png';
+import uhndata from '../images/uhndata.png';
+import rcmpiano from '../images/rcmpiano.jpg';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
 

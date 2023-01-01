@@ -4,11 +4,11 @@ import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Unstable_Grid2';
 import Link from '@mui/material/Link';
-import Monopoly from '../monopoly.jpg'
-import imuppic from '../imup.PNG'
-import Language from '../language.jpg'
-import Sentiment from '../sentiment.jpg'
-import Doordash from '../doordash.jpg'
+import Monopoly from '../images/monopoly.jpg'
+import imuppic from '../images/imup.PNG'
+import Language from '../images/language.jpg'
+import Sentiment from '../images/sentiment.jpg'
+import Doordash from '../images/doordash.jpg'
 import './introduction.css'
 
 const Projects = () => {
