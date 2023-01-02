@@ -357,7 +357,7 @@ const Projects = () => {
                         fontFamily: 'Poppins',
                         textAlign: 'center'
                     }}>
-                        Unity game project planned
+                        Unity game project in progress
                     </Typography>
                 </div>
             </>
