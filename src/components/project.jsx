@@ -9,6 +9,7 @@ import imuppic from '../images/imup.PNG'
 import Language from '../images/language.jpg'
 import Sentiment from '../images/sentiment.jpg'
 import Doordash from '../images/doordash.jpg'
+import FlappyBird from '../images/flappybird.png'
 import './introduction.css'
 
 const Projects = () => {
@@ -335,6 +336,72 @@ const Projects = () => {
         )
     }
 
+    const flappyBird = () => {
+        return (
+            <>
+                <div style={{
+                    position: 'relative',
+                    justifyContent: 'center',
+                }}>
+                    <Typography style={{
+                        fontSize: '3em',
+                        fontWeight: 'bold',
+                        fontFamily: 'Poppins',
+                        textAlign: 'center',
+                        color: 'grey',
+                        textShadow: '2px 2px black',
+                    }}>
+                        Flappy Bird Game
+                    </Typography>
+                    <img src={FlappyBird}style={{
+                        height: 'auto',
+                        width: '20%',
+                        left: `40%`,
+                        position: 'relative',
+                        marginTop: '2%',
+                    }} />
+                    <Typography style={{
+                        fontSize: '25px',
+                        fontFamily: 'Poppins',
+                        textAlign: 'center'
+                    }}>
+                    </Typography>
+                    <Typography style={{
+                        fontSize: '25px',
+                        fontFamily: 'Poppins',
+                        textAlign: 'center'
+                    }}>
+                        Unity Weekend Project
+                    </Typography>
+                    <Typography style={{
+                        fontSize: '25px',
+                        fontFamily: 'Poppins',
+                        textAlign: 'center'
+                    }}>
+                        Classic Flappy Bird Game
+                    </Typography>
+                    <Typography style={{
+                        fontSize: '25px',
+                        fontFamily: 'Poppins',
+                        textAlign: 'center'
+                    }}>
+                        Assets created by Mark Brown
+                    </Typography>
+                </div>
+                <div style={{
+                        fontSize: '25px',
+                        fontFamily: 'Poppins',
+                        textAlign: 'center'
+                    }}>
+                        <Link rel="noopener noreferrer" target="_blank" href="https://github.com/erictang398/flappy-bird" style={{
+                        }}>
+                            Repository
+                        </Link>
+                    </div>
+            </>
+        )
+    }
+
     const moreToCome = () => {
         return (
             <>
@@ -357,7 +424,7 @@ const Projects = () => {
                         fontFamily: 'Poppins',
                         textAlign: 'center'
                     }}>
-                        Unity game project in progress
+                        Unity game project planned
                     </Typography>
                 </div>
             </>
@@ -441,6 +508,18 @@ const Projects = () => {
 
                         <Grid xs style={{
                             backgroundColor: 'white',
+                            border: '2px solid #D3D3D3',
+                            minWidth: isMobile ? '70%' : '',
+                            marginBottom: isMobile ? '3vh' : ''
+                        }}>
+                            {flappyBird()}
+                        </Grid>
+
+                        <Box width="100%" style={{marginBottom: '3vh'}}/>
+                        
+                        <Grid xs style={{
+                            backgroundColor: 'white',
+                            marginRight: '20px',
                             border: '2px solid #D3D3D3',
                             minWidth: isMobile ? '70%' : '',
                             marginBottom: isMobile ? '3vh' : ''
