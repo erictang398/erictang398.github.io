@@ -76,7 +76,7 @@ const Contact = () => {
                         </Typography>
                     </div>
                     {/* <div style={{ width: '50%', height: '100%' }}> */}
-                        <Cube style={{ right: '50%' }}/>
+                        {/* <Cube style={{ right: '50%' }}/> */}
                     {/* </div> */}
 
                 </div>
